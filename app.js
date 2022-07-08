@@ -1,12 +1,12 @@
-//Pedir ingresar los datos
-var precioVenta = prompt("Ingrese el precio de venta");
+var monto = prompt("Ingrese un monto: ");
 
-var costoFijos = prompt("Ingrese los costos fijos");
+var gNecesario = monto * 0.5;
+var gOpcionales = monto * 0.3;
+var ahorro = monto * 0.2;
 
-var costosVariables = prompt("Ingrese los costos variables");
-
-// Medir las ganancias 
-var puntoEquilibrio = costoFijos / (precioVenta - costosVariables);
-
-//Resultado
-alert("El punto de equilibrio es " + puntoEquilibrio);
+alert(
+    "La division de gastos: \n"+
+    "Gastos necesarios: $"+gNecesario + "\n" +
+    "Gastos opcionales: $"+gOpcionales + "\n"+
+    "Ahorro e inversión: $"+ahorro
+);
